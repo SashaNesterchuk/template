@@ -43,7 +43,8 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "redux-logger": "^3.0.6",
-    "typescript": "^5"
+    "typescript": "^5",
+    "sass": "^1.69.5"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
