@@ -1,0 +1,31 @@
+@import "../../../styles/functions.scss";
+
+.card {
+  border-radius: 6px;
+  background: #fff;
+  padding: rem(24px);
+  box-shadow: 0px 4px 18px 0px rgba(75, 70, 92, 0.1);
+
+  &.col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  &.col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  &.col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+  &.col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  &.col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+  &.col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+
+  &.row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+}

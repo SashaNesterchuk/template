@@ -1,24 +1,16 @@
-// @import "variables";
-
 .nav-menu {
   position: sticky;
   display: flex;
   justify-content: space-between;
   width: 100%;
 
-  .title {
-    color: $cl-primary;
-    font-size: 2.14rem;
-    font-weight: 600;
-  }
-
   .search-container {
-    padding: 0.625rem;
-    border-radius: 30px;
-    box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px 0px rgba(165, 163, 174, 0.3);
     background: white;
     display: flex;
     align-items: center;
-    gap: 1.25rem;
   }
 }

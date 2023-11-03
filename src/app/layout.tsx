@@ -24,7 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={dmSans.className}>
         <Box className="layout-wrapper">
-          <Sidebar />
+          <div>
+            <Sidebar />
+          </div>
           <main className="layout-page-wrapper">
             <NavMenu />
             <div className="layout-page-container">{children}</div>

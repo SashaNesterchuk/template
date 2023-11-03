@@ -1,7 +1,5 @@
-.input_base {
-  background-color: #f4f7fe;
-  padding: 0.625rem 1.25rem;
-  border-radius: 49px;
+.search {
+  width: 100%;
   color: #8f9bba;
   font-size: 14px;
   font-style: normal;
@@ -10,9 +8,6 @@
   letter-spacing: -0.28px;
   margin: 0;
 
-  > .MuiSvgIcon-root {
-    background-color: red;
-  }
   input {
     &::placeholder {
       opacity: 1 !important;

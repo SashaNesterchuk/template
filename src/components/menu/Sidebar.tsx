@@ -44,9 +44,10 @@ export default function Sidebar() {
     <aside className="layout_menu">
       <Box className={"title"}>Title</Box>
       <Box className={"items"}>
-        {routes.map((el) => (
-          <List key={el.label} className={"item"}>
+        <List className={"item"}>
+          {routes.map((el) => (
             <ListItemButton
+              key={el.label}
               className={"item_button"}
               alignItems="center"
               onClick={() => routerPush(el.path)}
@@ -56,8 +57,8 @@ export default function Sidebar() {
 
               <ListItemText primary={el.label} className={"item_label"} />
             </ListItemButton>
-          </List>
-        ))}
+          ))}
+        </List>
       </Box>
     </aside>
   );

@@ -2,19 +2,19 @@
 
 .layout-wrapper {
   height: 100%;
-  display: flex;
-  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 260px auto;
   align-items: stretch;
-  padding-left: calc($width-menu + 1.25rem);
-  padding-right: 1.25rem;
   background-color: $background-page;
-  padding-top: 3rem;
 
   .layout-page-wrapper {
-    width: 100%;
+    background-color: $background-page;
+    padding-top: 16px;
+    padding-left: 26px;
+    padding-right: 16px;
 
     .layout-page-container {
-      margin-top: 1.25rem;
+      padding-top: 26px;
     }
   }
 }
