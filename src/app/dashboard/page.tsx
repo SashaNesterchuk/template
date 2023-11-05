@@ -1,5 +1,8 @@
 import BasicWidget from "@/components/widgets/BasicWidget";
 import "./page.scss";
+import InfoSmallWidget from "@/components/widgets/InfoSmallWidget";
+import AssignmentIcon from "@mui/icons-material/Assignment";
+import ArticleIcon from "@mui/icons-material/Article";
 
 export default function Dashboard() {
   return (
@@ -16,7 +19,18 @@ export default function Dashboard() {
         <BasicWidget>test7</BasicWidget>
         <BasicWidget>test8</BasicWidget>
         <BasicWidget>test9</BasicWidget>
-        <BasicWidget>test10</BasicWidget>
+        <InfoSmallWidget
+          icon={<AssignmentIcon />}
+          label="Test"
+          description="test de"
+          color="warning"
+        />
+        <InfoSmallWidget
+          icon={<ArticleIcon />}
+          color="danger"
+          label="Test"
+          description="test de"
+        />
         <BasicWidget>test11</BasicWidget>
         <BasicWidget>test12</BasicWidget>
         <BasicWidget>test13</BasicWidget>

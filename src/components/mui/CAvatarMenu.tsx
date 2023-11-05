@@ -28,12 +28,12 @@ export default function CAvatarMenu() {
         <IconButton
           onClick={handleClick}
           size="small"
-          sx={{ ml: 2 }}
+          sx={{ padding: 0 }}
           aria-controls={open ? "account-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
         >
-          <Avatar sx={{ width: 41, height: 41 }}>M</Avatar>
+          <Avatar sx={{ width: 38, height: 38 }}>M</Avatar>
         </IconButton>
       </Tooltip>
       <Menu
