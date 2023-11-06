@@ -5,7 +5,7 @@ import colors from "../../../styles/colors.module.scss";
 
 interface Props {
   icon: ReactNode;
-  color: Color;
+  color?: Color;
   round?: boolean;
 }
 
@@ -20,8 +20,8 @@ export default function CIconBackground(props: Props) {
       <Box
         sx={{
           position: "absolute",
-          backgroundColor: colors[props.color],
-          borderRadius: props.round ? "30px" : "6px",
+          backgroundColor: colors[props.color || "primary"],
+          borderRadius: props.round ? "50%" : "6px",
           opacity: "16%",
           width: "100%",
           height: "100%",
@@ -29,7 +29,7 @@ export default function CIconBackground(props: Props) {
           left: 0,
         }}
       />
-      <Box sx={{ color: colors[props.color], display: "flex" }}>
+      <Box sx={{ color: colors[props.color || "primary"], display: "flex" }}>
         {props.icon}
       </Box>
     </Box>

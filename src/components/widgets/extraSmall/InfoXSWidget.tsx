@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
-import BasicWidget from "./BasicWidget";
+import BasicWidget from "../BasicWidget";
 import { Box } from "@mui/material";
 import { Color } from "@/types";
-import CIconBackground from "../mui/CIconBackground/CIconBackground";
+import CIconBackground from "../../mui/CIconBackground/CIconBackground";
 
 interface Props {
   icon: ReactNode;
@@ -11,7 +11,7 @@ interface Props {
   color?: Color;
 }
 
-export default function InfoSmallWidget(props: Props) {
+export default function InfoXSWidget(props: Props) {
   return (
     <BasicWidget color={props.color}>
       <Box
